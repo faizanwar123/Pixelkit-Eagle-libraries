@@ -94,14 +94,16 @@ Source: LP2C63-ST-RGB-SR0.SPEC.pdf</description>
 <rectangle x1="2.5" y1="-2.1" x2="3.7" y2="-1.1" layer="51" rot="R180"/>
 <rectangle x1="2.5" y1="1.1" x2="3.7" y2="2.1" layer="51" rot="R180"/>
 </package>
-<package name="DIP-4">
-<circle x="0" y="1.27" radius="2.8398" width="0.127" layer="21"/>
-<circle x="0" y="1.27" radius="1.796" width="0.127" layer="21"/>
-<pad name="BLUE" x="0" y="5.08" drill="0.8"/>
-<pad name="COMMON_CATHODE" x="-0.635" y="2.54" drill="0.8"/>
-<pad name="GREEN" x="0" y="-2.54" drill="0.8"/>
-<pad name="RED" x="0" y="0" drill="0.8"/>
-<text x="-2.54" y="6.35" size="1.27" layer="21">&gt;NAME</text>
+<package name="DIP-4-1.27MM">
+  <circle x="0" y="0.635" radius="1.42" width="0.127" layer="21"/>
+  <circle x="0" y="0.635" radius="0.9" width="0.127" layer="21"/>
+
+  <pad name="BLUE" x="0" y="2.54" drill="0.7"/>
+  <pad name="COMMON_CATHODE" x="-0.635" y="1.27" drill="0.7"/>
+  <pad name="RED" x="0" y="0" drill="0.7"/>
+  <pad name="GREEN" x="0" y="-1.27" drill="0.7"/>
+
+  <text x="-2" y="3.2" size="1" layer="21">&gt;NAME</text>
 </package>
 <package name="LED-TO-BLS-SOCKET">
 <wire x1="3.81" y1="1.27" x2="3.81" y2="-2.54" width="0.127" layer="21" curve="-180"/>
@@ -547,7 +549,7 @@ Special for AmbilightUSB</description>
 <gate name="G$1" symbol="LED-RGB-COM-CATHODE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIP-4">
+<device name="-1.27MM" package="DIP-4-1.27MM">
 <connects>
 <connect gate="G$1" pin="BLUE" pad="BLUE"/>
 <connect gate="G$1" pin="COM-CATHODE" pad="COMMON_CATHODE"/>
